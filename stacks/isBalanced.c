@@ -19,7 +19,6 @@ bool is_empty(Stack* stack){
     return stack->top == -1;
 }
 
-
 bool is_full(Stack* stack){
     return stack->top == MAX_SIZE - 1;
 }
