@@ -1,1 +1,5 @@
+basic example:
 https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm
+
+GPT implementation example link:
+https://chat.openai.com/share/f61794d5-931a-4c77-9182-11f480843832
