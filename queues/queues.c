@@ -11,12 +11,12 @@ struct Queue {
 
 
 struct Queue* createQueue(unsigned capacity){
-    struct Queue* queue = (struct Queue*)malloc(sizeof(struct Queue));
+    struct Queue* queue = (struct Queue*) malloc(sizeof(struct Queue));
     queue->capacity = capacity;
     queue->front = queue->size = 0;
 
     queue->rear = capacity - 1;
-    queue->array = (int*)malloc(queue->capacity * sizeof(int));
+    queue->array = (int*) malloc(queue->capacity * sizeof(int));
     return queue;
 }
 
@@ -36,7 +36,7 @@ void enqueue(struct Queue* queue, int item){
     else {
         queue->rear = (queue->rear + 1) % (queue->capacity);
         queue->array[queue->rear] = item;
-        queue->size = queue->size + 1;
+        queue->size++;
         printf("%d enqueue to queue\n", item);
     }
 }
@@ -47,7 +47,7 @@ int dequeue(struct Queue* queue){
     }
     int item = queue->array[queue->front];
     queue->front = (queue->front + 1) % (queue->capacity);
-    queue->size = queue->size - 1; 
+    queue->size--;
     return item;
 }
 
@@ -73,12 +73,10 @@ int main(void){
     enqueue(queue, 30);
     enqueue(queue, 40);
 
-
     printf("-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("%d dequeued from queue\n", dequeue(queue));
     printf("Front is %d\n", front(queue));
     printf("Rear is %d\n", rear(queue));
 
-    
     return 0;
 }
