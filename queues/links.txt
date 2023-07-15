@@ -1,3 +1,5 @@
 explanation link:
 https://www.geeksforgeeks.org/introduction-and-array-implementation-of-queue/
 
+explanation priority queue link:
+https://www.tutorialspoint.com/data_structures_algorithms/priority_queue.htm
