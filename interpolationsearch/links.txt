@@ -1,0 +1,7 @@
+Bem, acho que não tenho a base matemática pra entender esse aqui. 
+Terei que me contentar com suas aplicações e sua implementação.
+Será que vou mesmo conseguir chegar lá um dia?
+
+explanation and implamentation link
+https://www.tutorialspoint.com/data_structures_algorithms/interpolation_search_in_c.htm
+
